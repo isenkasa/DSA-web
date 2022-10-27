@@ -60,6 +60,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #042861;
+  color: #5999ff;
 }
 </style>
