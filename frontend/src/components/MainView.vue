@@ -6,31 +6,29 @@
     <p>
       This application contains several useful Data Structure and Algorithm tools.
     </p>
-    <h3>Arrays/Hashing</h3>
+    <h3>Data Structure Tools</h3>
     <ul>
-      <li><a href="https://leetcode.com/problems/contains-duplicate/" target="_blank" rel="noopener">Contains Duplicate (Coming Soon)</a></li>
+      <li><a href="/array">Array</a></li>
+      <li><a href="/string">String</a></li>
+      <li><a href="/linked-list">Linked List</a></li>
+      <li><a href="/stack">Stack</a></li>
+      <li><a href="/heap">Heap/Priority Queue</a></li>
+      <li><a href="/tree">Tree</a></li>
+      <li><a href="/graph">Graph</a></li>
+      <li><a href="/advanced-graph">Advanced Graph</a></li>
+      <li><a href="/interval">Interval</a></li>
     </ul>
-    <h3>Strings</h3>
+    <h3>Algorithms</h3>
     <ul>
-      <li><a href="">Valid Palindrome (Coming Soon)</a></li>
+      <li><a href="/backtracking">Backtracking</a></li>
+      <li><a href="/dynamic-programming">Dynamic Programming</a></li>
+      <li><a href="/greedy-algorithm">Greedy Algorithm</a></li>
     </ul>
-    <h3>Stack</h3>
+    <h3>Fundamental</h3>
     <ul>
-      <li><a href="">Valid Parenthesis (Coming Soon)</a></li>
+      <li><a href="/math">Math & Geometry</a></li>
+      <li><a href="/bit">Bit Manipulation</a></li>
     </ul>
-    <h3>Binary Search</h3>
-    <h3>Linked List</h3>
-    <h3>Trees</h3>
-    <h3>Tries</h3>
-    <h3>Heap/Priority Queue</h3>
-    <h3>Backtracking</h3>
-    <h3>Graphs</h3>
-    <h3>Advanced Graphs</h3>
-    <h3>Dynamic Programming</h3>
-    <h3>Greedy Algorithms</h3>
-    <h3>Intervals</h3>
-    <h3>Math & Geometry</h3>
-    <h3>Bit Manipulation</h3>
   </div>
 </template>
 
