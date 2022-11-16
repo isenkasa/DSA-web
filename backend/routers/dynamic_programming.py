@@ -10,4 +10,4 @@ router = APIRouter(
 
 @router.get("/", tags=["dynamic-programming"])
 async def root():
-    return {"description": "Dynamic Programming"}
+    return {"description": "Dynamic Programming API"}
