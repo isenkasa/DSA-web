@@ -4,10 +4,8 @@ import MainView from '@/components/MainView.vue'
 
 describe('MainView.vue', () => {
   it('renders props.msg when passed', () => {
-    const msg = 'new message'
-    const wrapper = shallowMount(MainView, {
-      props: { msg }
-    })
+    const msg = 'Welcome to DSA Web Application'
+    const wrapper = shallowMount(MainView)
     expect(wrapper.text()).to.include(msg)
   })
 })
