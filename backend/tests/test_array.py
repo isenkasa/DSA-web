@@ -18,3 +18,8 @@ def test_contains_duplicate_without_dups():
     response = client.get("/array/contains-duplicate/?arr=1,2,3,4")
     assert response.status_code == 200
     assert response.json() == False
+
+def test_contains_duplicate_with_invalid_input():
+    response = client.get("/array/contains-duplicate/?arr=qwerty")
+    assert response.status_code == 400
+    print(response)

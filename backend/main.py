@@ -1,8 +1,22 @@
-from fastapi import Depends, FastAPI
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from .routers import array, string, stack, binary_search, linked_list, tree, trie, heap, backtracking, graph, dynamic_programming, greedy, interval, math, bit
 
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+]
+
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(array.router)
 app.include_router(string.router)

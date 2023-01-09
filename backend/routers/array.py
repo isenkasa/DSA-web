@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 
 router = APIRouter(
     prefix = "/array",
@@ -17,10 +17,13 @@ async def root():
 
 @router.get("/contains-duplicate/")
 async def contains_duplicate(arr: str):
-    arr = string_to_arr(arr)
-    hashset = set()
-    for n in arr:
-        if n in hashset:
-            return True
-        hashset.add(n)
-    return False
+    try:
+        arr = string_to_arr(arr)
+        hashset = set()
+        for n in arr:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
+    except:
+        raise HTTPException(status_code=400, detail="Server Error")
